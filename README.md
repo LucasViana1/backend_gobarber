@@ -1,3 +1,5 @@
+### Scripts
+
 cria package.json
 yarn init -y
 cria tsconfig.json
