@@ -1,13 +1,13 @@
-### Scripts
+## Scripts
 
-## `yarn init -y`
+### `yarn init -y`
 cria package.json
 
-## `yarn tsc --init`
+### `yarn tsc --init`
 cria tsconfig.json
 
-## `yarn tsc`
+### `yarn tsc`
 gera arquivos dist
 
-## `yarn ts-node-dev --transpileOnly --ignore node_modules src/server.ts`
+### `yarn ts-node-dev --transpileOnly --ignore node_modules src/server.ts`
 roda api em dev
