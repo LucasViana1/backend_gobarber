@@ -28,3 +28,47 @@ Soc:
 - Repositories: manipular dados (operações de CRUD)
 - Services: Regra de negócio (possuindo apenas um método), condicionais, verificação de erros
 - Model: Formato dos dados de uma entidade
+
+## Banco de dados
+
+Níveis de abstração: driver nativo (pg do postgres), query builder (knex), ORM (sequelize, typeORM)
+
+## TypeORM (com script personalizado package.json)
+
+Migrations: padroniza e facilita o uso do banco de dados entre times de desenvolvimento.
+A edição de uma migration que ja tenha sido executada só deve ocorrer caso ela não tenha subido no repositório, do contrário é necessário criar uma nova migration
+
+### `yarn typeorm`
+Referência ao cli.js do node_modules do typeORM
+
+### `yarn typeorm migration:create -n nome_migration`
+Cria uma nova migration
+
+### `yarn typeorm migration:run`
+Executa todas as migrations no banco de dados
+
+### `yarn typeorm migration:revert`
+Cancela a migration, removendo as alterações feita por ela
+
+### `yarn typeorm migration:show`
+Visualiza todas as migrations já executadas
+
+## Docker
+
+### `docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 postgres`
+Exemplo de comando para criação de nova imagem com postgres
+
+### `docker ps`
+Exibe containers executando (ativos)
+
+### `docker ps -a`
+Exibe todos containers existentes (ativos e inativos)
+
+### `docker start id_container`
+Ativa um container, passando seu id
+
+### `docker stop id_container`
+Desativa um container, passando seu id
+
+### `docker logs id_container`
+Exibe logs do container
