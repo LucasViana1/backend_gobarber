@@ -72,3 +72,12 @@ Desativa um container, passando seu id
 
 ### `docker logs id_container`
 Exibe logs do container
+
+## Links
+
+Gerar md5:
+http://www.md5.cz/
+https://www.md5online.org/
+
+Decode jwt token:
+https://jwt.io/
