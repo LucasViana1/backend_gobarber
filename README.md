@@ -23,6 +23,9 @@ roda api em dev
 SOLID:
 
 - Single Responsability Principle: cada arquivo/classe possui apenas uma responsabilidade;
+- Open Closed Principle:
+- Liskov Substitution Principle: dado um conjunto de regras, cada camada da aplicação deve ser passível de alteração, onde os serviços devem compreender métodos, sem se preocupar com o banco/orm utilizado por trás;
+- Interface Segregation Principle:
 - Dependency Invertion Principle: cada arquivo/classe irá utilizar o mesmo objeto utilizado na manipulação de dados (ex. repositories), não serão instanciadas novamente em cada outra classe que o utiliza;
 
 DTO: Data Transfer Object;
